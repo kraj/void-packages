@@ -14,6 +14,10 @@ homepage="https://www.pcre.org/"
 distfiles="https://github.com/PhilipHazel/pcre2/releases/download/pcre2-${version}/pcre2-${version}.tar.bz2"
 checksum=0f03caf57f81d9ff362ac28cd389c055ec2bf0678d277349a1a4bee00ad6d440
 
+case "$XBPS_TARGET_MACHINE" in
+        riscv*) configure_args+=" --disable-jit" ;;
+esac
+
 post_install() {
 	vlicense LICENCE
 }

@@ -12,7 +12,7 @@ distfiles="https://github.com/watchexec/watchexec/archive/refs/tags/v${version}.
 checksum=ff835eed2be68de97b08eaa2177d9cdcb721f6d727c6803a642ca94d11eec5fa
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	XBPS_CROSS_RUSTFLAGS+=" -latomic"
 fi
 

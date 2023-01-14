@@ -25,5 +25,5 @@ build_options_default="snorenotify"
 desc_option_snorenotify="Enable support for desktop notifications"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi

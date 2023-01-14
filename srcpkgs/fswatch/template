@@ -13,7 +13,7 @@ distfiles="https://github.com/emcrisostomo/fswatch/releases/download/${version}/
 checksum=95ece85eb01af71e99afef0173755fcedb737b639163f8efc7fed674f6f5372f
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	export LIBS=-latomic
 fi
 

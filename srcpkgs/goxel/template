@@ -14,7 +14,7 @@ distfiles="https://github.com/guillaumechereau/goxel/archive/v${version}.tar.gz"
 checksum=660030e1b3b33a3e909d8189780a192cba059774af57b042ecb63297f2a6d0fc
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 pre_build() {

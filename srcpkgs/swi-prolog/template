@@ -18,6 +18,6 @@ distfiles="http://www.swi-prolog.org/download/stable/src/swipl-${version}.tar.gz
 checksum=e2919bc58710abd62b9cd40179a724c30bdbe9aa428af49d7fdc6d0158921afb
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	LDFLAGS="-latomic"
 fi

@@ -32,7 +32,7 @@ else
 fi
 
 if [ "$_use_libatomic" = "yes" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	configure_args+=" -DCMAKE_CXX_STANDARD_LIBRARIES=-latomic"
 fi
 

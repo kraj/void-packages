@@ -15,7 +15,7 @@ distfiles="${homepage}/archive/${version}.tar.gz"
 checksum=1e0bcf9bb82a2c514f1474fa74ef1d63502c780331e44634e31a5b5902be8a85
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	LDFLAGS+=" -latomic"
 fi
 

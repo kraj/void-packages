@@ -16,7 +16,7 @@ system_accounts="_freeradius"
 make_dirs="/etc/raddb 0750 _freeradius _freeradius"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 pre_install() {

@@ -229,7 +229,7 @@ if [ "$XBPS_TARGET_LIBC" = "musl" ]; then
 fi
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 CXXFLAGS+=" -DGLM_ENABLE_EXPERIMENTAL -DU_USING_ICU_NAMESPACE=1"

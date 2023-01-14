@@ -21,7 +21,7 @@ distfiles="${KDE_SITE}/release-service/${version}/src/akonadi-${version}.tar.xz"
 checksum=6db090334990834878cb8fbdc8caedd6797fa0bb47c972c05e1acb028e8360cd
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 pre_configure() {

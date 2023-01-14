@@ -24,7 +24,7 @@ dkms_modules="zfs ${version}"
 replaces="spl<=0.7.13_1" # Because SPL was merged into zfs in 0.8.0
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 pre_configure() {

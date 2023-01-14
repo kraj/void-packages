@@ -37,7 +37,7 @@ desc_option_opus="Enable support for opus"
 desc_option_zbar="Enable support for zbar"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 pre_configure() {

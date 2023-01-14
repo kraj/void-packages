@@ -38,7 +38,7 @@ if [ "$XBPS_TARGET_ENDIAN" = "be" ]; then
 fi
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 post_extract() {

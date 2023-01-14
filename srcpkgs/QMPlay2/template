@@ -17,7 +17,7 @@ distfiles="https://github.com/zaps166/QMPlay2/releases/download/${version}/QMPla
 checksum=31e53121e517b45d4317a298df9aed447f880383bea96ae28bfcec0b3a19483f
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	configure_args+=" -DCMAKE_CXX_STANDARD_LIBRARIES=-latomic"
 fi
 

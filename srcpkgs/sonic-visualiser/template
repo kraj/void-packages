@@ -17,7 +17,7 @@ distfiles="https://github.com/sonic-visualiser/sonic-visualiser/releases/downloa
 checksum=59ab88682590b3bdfd230248a2b0c2372987fff9dabf1b1b1d4095014625efe9
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 post_extract() {

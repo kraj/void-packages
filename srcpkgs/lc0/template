@@ -28,7 +28,7 @@ if [ "$CROSS_BUILD" ] && [ "$build_option_openblas" ]; then
 fi
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 case "$XBPS_TARGET_MACHINE" in

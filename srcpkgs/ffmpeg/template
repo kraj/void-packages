@@ -49,7 +49,7 @@ if [ "$XBPS_TARGET_WORDSIZE" != "32" ]; then
 fi
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 _apply_patch() {

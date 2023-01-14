@@ -20,7 +20,7 @@ make_dirs="/var/lib/conduit 0700 _conduit _conduit
  /etc/conduit 755 _conduit _conduit"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	XBPS_CROSS_RUSTFLAGS+=" -latomic"
 fi
 

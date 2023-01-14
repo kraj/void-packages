@@ -16,7 +16,7 @@ distfiles="${KDE_SITE}/frameworks/${version%.*}/portingAids/${pkgname}-${version
 checksum=dee2e7da430320eaf135413bde3c2b64aed7ea3ff9f0e67e8896bc7ee1e7ec3d
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 kross-devel_package() {

@@ -16,7 +16,7 @@ distfiles="https://download.filezilla-project.org/${pkgname}/${pkgname}-${versio
 checksum=ac2a1d0d828ea600787cea1e7ee50d21f0d3bd9152cece6187b8afc900622aa0
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	LDFLAGS+=" -latomic"
 fi
 

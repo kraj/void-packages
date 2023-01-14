@@ -19,7 +19,7 @@ case "$XBPS_TARGET_MACHINE" in
 esac
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 
 	post_patch() {
 		printf '\ntarget_link_libraries(Alembic PRIVATE atomic)\n' >> lib/Alembic/CMakeLists.txt

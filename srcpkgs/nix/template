@@ -63,7 +63,7 @@ make_dirs="
 	/nix/store 1775 root nixbld"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 pre_configure() {

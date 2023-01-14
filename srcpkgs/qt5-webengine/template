@@ -61,21 +61,21 @@ if [ "$XBPS_TARGET_ENDIAN" != "le" ]; then
 fi
 
 if [ "$XBPS_NO_ATOMIC8" ]; then
-	hostmakedepends+=" libatomic-devel"
+	hostmakedepends+=" "
 fi
 
 # ppc64 still needs libatomic here, as does s390x but we don't have that
 case "$XBPS_MACHINE" in
-	ppc64*) hostmakedepends+=" libatomic-devel"
+	ppc64*) hostmakedepends+=" "
 esac
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	LDFLAGS+=" -latomic"
 fi
 
 case "$XBPS_TARGET_MACHINE" in
-	ppc64*) makedepends+=" libatomic-devel" ;;
+	ppc64*) makedepends+=" " ;;
 esac
 
 case "$XBPS_TARGET_MACHINE" in

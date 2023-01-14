@@ -19,7 +19,7 @@ checksum=f21f9cd3337a672a44c7e64bf9a8d8ad77c1b88b952b2b6184c7af9b1f3ef459
 make_check_pre="xvfb-run"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 if [ "$XBPS_CHECK_PKGS" ]; then

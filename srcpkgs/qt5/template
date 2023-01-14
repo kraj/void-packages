@@ -48,7 +48,7 @@ if [ "$CROSS_BUILD" ]; then
 fi
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 _cleanup_wrksrc_leak() {
@@ -1074,7 +1074,7 @@ qt5-devel_package() {
 		qt5-xml-${version}_${revision}
 		qt5-host-tools-${version}_${revision}"
 	if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-		depends+=" libatomic-devel"
+		depends+=" "
 	fi
 	short_desc+=" - Development files"
 	# qt5-enginio-devel is gone

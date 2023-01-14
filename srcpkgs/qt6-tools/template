@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DEXTERNAL_GUMBO=ON -DLITEHTML_UTF8=ON -DUSE_ICU=ON
  -DQT_BUILD_SHARED_LIBS=ON -DQT_FEATURE_assistant=ON"
 hostmakedepends="qt6-base-devel perl qt6-plugin-sqlite"
-makedepends="qt6-base-devel libatomic-devel qt6-plugin-sqlite
+makedepends="qt6-base-devel  qt6-plugin-sqlite
  gumbo-parser-devel icu-devel"
 short_desc="Cross-platform application and UI framework (QT6) - qt6-tools component"
 maintainer="John <me@johnnynator.dev>"

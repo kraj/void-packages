@@ -4,7 +4,7 @@ version=5.8
 revision=1
 build_style=cmake
 hostmakedepends="pkg-config"
-makedepends="fftw-devel gtkmm-devel lensfun-devel libatomic-devel
+makedepends="fftw-devel gtkmm-devel lensfun-devel 
  libcanberra-devel libgomp-devel libiptcdata-devel librsvg-devel"
 depends="desktop-file-utils hicolor-icon-theme"
 short_desc="Free RAW converter and digital photo processing software"

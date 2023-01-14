@@ -15,7 +15,7 @@ distfiles="https://github.com/savoirfairelinux/opendht/archive/refs/tags/v${vers
 checksum=8077958fb7006612b9b9758095461d8a35316b4224184f10cef785f0ec7031fe
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 opendht-devel_package() {

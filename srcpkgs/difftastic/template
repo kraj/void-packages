@@ -12,7 +12,7 @@ distfiles="https://static.crates.io/crates/difftastic/difftastic-${version}.crat
 checksum=6a8ac20b608fd771b1caa3795280b2b09e0d2edbd0c00b11b9e10e96dffb1f38
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	XBPS_CROSS_RUSTFLAGS+=" -latomic"
 	if [ -z "$CROSS_BUILD" ]; then
 		broken="how is this supposed to even work"

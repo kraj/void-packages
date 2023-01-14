@@ -25,7 +25,7 @@ checksum=a7a4603417fcb42ec37f2cff9034280ce2ec772c0a5fc500fada4286ba3114aa
 LDFLAGS="-Wl,-z,stack-size=1048576"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	LDFLAGS+=" -latomic"
 fi
 

@@ -35,7 +35,7 @@ checksum="b5494830e917231aa7515992c69bcbb495f532fefde42530b265f9fd590e1702
 skip_extraction="monero-${version}.tar.gz rapidjson-${_rapidjson_gitrev}.tar.gz supercop-${_supercop_gitrev}.tar.gz RandomX-${_randomx_gitrev}.tar.gz quirc-${_quirc_gitrev}.tar.gz"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	CFLAGS+=" -latomic"
 fi
 

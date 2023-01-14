@@ -20,7 +20,7 @@ build_options="qt"
 desc_option_qt="Include QT WebEngine to support solving captchas"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 if [ -z "$CROSS_BUILD" ]; then

@@ -26,7 +26,7 @@ checksum=91392469be1f491905fa9e78fa4e4059a89ab616ddf2ecfd525bc1d65c26bb93
 lib32disabled=yes
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 # Split like qt6, but keep qt6-core in main pkg

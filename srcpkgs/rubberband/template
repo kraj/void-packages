@@ -15,7 +15,7 @@ distfiles="https://breakfastquay.com/files/releases/rubberband-${version}.tar.bz
 checksum=dda7e257b14c59a1f59c5ccc4d6f19412039f77834275955aa0ff511779b98d2
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	LDFLAGS+=" -latomic"
 fi
 

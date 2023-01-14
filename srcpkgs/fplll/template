@@ -12,7 +12,7 @@ distfiles="https://github.com/fplll/fplll/releases/download/${version}/fplll-${v
 checksum=6e7b1704fd56f29dd9fc1dd719cc1f2df1f58964fd77bbde162f594d7fff7ba5
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 fi
 
 fplll-devel_package() {

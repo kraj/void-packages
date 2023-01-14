@@ -14,7 +14,7 @@ distfiles="https://github.com/qpdf/qpdf/archive/refs/tags/v${version}.tar.gz"
 checksum=d5fde4881948db41300f5806ea54f07f9fc37bc414a6a78efa2649d212b56707
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
-	makedepends+=" libatomic-devel"
+	makedepends+=" "
 	case "$XBPS_TARGET_MACHINE" in
 	armv6l-musl)
 		LIBS="-latomic"

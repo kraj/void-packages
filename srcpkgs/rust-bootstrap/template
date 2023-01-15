@@ -1,8 +1,7 @@
 # Template file for 'rust-bootstrap'
 pkgname=rust-bootstrap
-version=1.64.0
+version=1.66.1
 revision=1
-create_wrksrc=yes
 short_desc="Rust programming language bootstrap toolchain"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="MIT, Apache-2.0"
@@ -35,13 +34,13 @@ case "$XBPS_TARGET_MACHINE" in
 		;;
 	x86_64)
 		checksum="
-		 1f5756a03119853b53358018c5b1592940a2354c3c9f84ee7faf684e3478f8f0
-		 6ace34bcbba9557aa2fc3a0515c3da4a83ca24d7d45506c5e1b32f589fa38a8b"
+		 242855e2626860aede6957dc56481cc02acf8cad12fa5bbbcbd93f9c51f0b3ad
+		 c5e2c9b160bd8d99514f13cfbc0e42a722fd9ca14e6aaca4b9b77731a7a48377"
 		;;
 	x86_64-musl)
 		checksum="
-		 5177d749b5dcc74596e314b73c5f3f3eabed8b3e207f812f229fbf0682c162ae
-		 29af13a882abbe797fadd43afcb75bce2e2304438db9e21a3e64a2e9100501fb"
+		 0f476542c8a6caa9082b4f8a23cff70c58b96fec4f732904310aaa86c90cec9a
+		 a9710727ba28955deb7fbec799faed19486c9af3c7e3088ec6659a257515ffca"
 		;;
 	ppc64le)
 		checksum="

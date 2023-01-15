@@ -1,6 +1,6 @@
 # Template file for 'cargo-bootstrap'
 pkgname=cargo-bootstrap
-version=1.64.0
+version=1.66.1
 revision=1
 short_desc="Bootstrap binaries of Rust package manager"
 maintainer="Orphaned <orphan@voidlinux.org>"
@@ -29,10 +29,10 @@ case "$XBPS_TARGET_MACHINE" in
 		checksum="e2e20a16f5db52cd6b773c94225b03880743544ff2f317dd857cf0dceac6ab57"
 		;;
 	x86_64)
-		checksum="21434d83a30ad3fa4e4831487c5574a20b07dd57d213b26e1246290c57d4ec41"
+		checksum="a636f83eb2327a66f484b9592ab305c6642df16fc80d0d1cb727e766a60da904"
 		;;
 	x86_64-musl)
-		checksum="01d06176fd894b9299ed4f5b78e87d78a9a25b9ba803d3f8c50b7a4ea21d8807"
+		checksum="6b91979328294e8a5f74c7134846eff593b0b0c9ea6aa3b58d4572e4a3d2e902"
 		;;
 	ppc64le)
 		checksum="ba7188b2c7890e61bf58d3aa9e94c323fec375f67cf03841bbcc0f6c800fe6ad"

@@ -1,6 +1,6 @@
 # Template file for 'libclc'
 pkgname=libclc
-version=12.0.0
+version=15.0.6
 revision=1
 build_style=cmake
 configure_args="-DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release"
@@ -11,7 +11,7 @@ maintainer="Orphaned <orphan@voidlinux.org>"
 license="BSD-3-Clause, MIT"
 homepage="https://libclc.llvm.org"
 distfiles="https://github.com/llvm/llvm-project/releases/download/llvmorg-${version}/libclc-${version}.src.tar.xz"
-checksum=6b777ee2cd57da1b122f76c208463f620eef508f4128210c6b1a96bfb75c74dc
+checksum=f5eb63103557652f96fd40d2a49a9ccb184e08966ec9d89a2e53440120ad1f4c
 replaces="libclc-git>=0"
 
 do_configure() {

@@ -1,0 +1,13 @@
+--- firefox-108.0.1/third_party/rust/bindgen/src/lib.rs	2022-12-15 23:31:49.000000000 +0100
++++ -	2023-01-16 23:34:40.575488360 +0100
+@@ -2173,6 +2173,10 @@
+         clang_target
+             .push_str(rust_target.strip_prefix("aarch64-apple-").unwrap());
+         return clang_target;
++    } else if rust_target.starts_with("riscv64gc-") {
++        let mut clang_target = "riscv64-".to_owned();
++        clang_target.push_str(rust_target.strip_prefix("riscv64gc-").unwrap());
++        return clang_target;
+     }
+     rust_target.to_owned()
+ }

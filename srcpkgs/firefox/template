@@ -60,6 +60,9 @@ post_extract() {
 
 post_patch() {
 	: # _clear_vendor_checksums num-traits
+	_clear_vendor_checksums authenticator
+	_clear_vendor_checksums nix
+	_clear_vendor_checksums bindgen
 }
 
 do_build() {
@@ -215,7 +218,7 @@ do_build() {
 	!
 
 	# work around large debug symbols on 32-bit hosts
-	if [ "$XBPS_WORDSIZE" = "32" ]; then
+	if [ "$XBPS_WORDSIZE" = "32" ] || [ "${XBPS_TARGET_MACHINE/-musl/}" = "riscv64" ]; then
 		echo "ac_add_options --disable-debug-symbols" >>.mozconfig
 		echo "ac_add_options --disable-debug" >>.mozconfig
 		export LDFLAGS+=" -Wl,--no-keep-memory"

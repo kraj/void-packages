@@ -1,11 +1,13 @@
 # Template file for 'librsvg'
 pkgname=librsvg
-version=2.52.2
+version=2.54.4
 revision=1
 build_style=gnu-configure
 build_helper="gir"
-configure_args="--disable-static --enable-introspection --enable-vala"
-hostmakedepends="cargo pkg-config glib-devel gdk-pixbuf-devel vala"
+configure_args="--disable-static --enable-introspection --enable-vala
+ --enable-gtk-doc"
+hostmakedepends="cargo pkg-config glib-devel gdk-pixbuf-devel vala
+ gi-docgen python3-docutils"
 makedepends="cairo-devel freetype-devel gdk-pixbuf-devel libcroco-devel
  libglib-devel libxml2-devel pango-devel rust vala"
 short_desc="SVG library for GNOME"
@@ -15,7 +17,7 @@ homepage="https://wiki.gnome.org/Projects/LibRsvg"
 # update changelog when release series changes
 changelog="https://gitlab.gnome.org/GNOME/librsvg/-/raw/librsvg-2.50/NEWS"
 distfiles="${GNOME_SITE}/${pkgname}/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=03d2887c18ffb906e1a60f97fe46a7169f69aa28d6db5d285748f3618b093427
+checksum=ea152a243f6a43c0e036a28c70de3fcbcdea5664c6811c78592bc229ecc24833
 
 # reference files are for specific pango and harfbuzz versions
 # the test suite isn't designed to be run by distros
@@ -39,7 +41,7 @@ librsvg-devel_package() {
 		vmove usr/include
 		vmove usr/lib/pkgconfig
 		vmove "usr/lib/*.so"
-		vmove usr/share/gtk-doc
+		vmove usr/share/doc/librsvg
 		vmove usr/share/gir-1.0
 		vmove usr/share/vala
 	}

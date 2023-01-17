@@ -18,7 +18,7 @@ checksum=cab667733cae4d6e47cb30d07a21c71ce827d05a3d75e5f525220e80d45a4c99
 build_options="nextcloud"
 desc_option_nextcloud="Build nextcloud support (needs Qt5 WebEngine)"
 
-if [ "$XBPS_TARGET_ENDIAN" = "le" ]; then
+if [ "$XBPS_TARGET_ENDIAN" = "le" ] && ! [ "${XBPS_TARGET_MACHINE/-musl/}" = "riscv64" ]; then
 	if [ "$XBPS_WORDSIZE" = "$XBPS_TARGET_WORDSIZE" ]; then
 		build_options_default+=" nextcloud"
 	fi

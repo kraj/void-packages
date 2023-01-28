@@ -15,6 +15,8 @@ checksum=8bc7f94630eefda55ac8851a4071d7782385b711ea8f6313e2e64be05f686592
 pre_build() {
 	# cannot divide `usize` by `u32`
 	cargo update --package lexical-core:0.6.7 --precise 0.6.8
+	# Newer libc needed for riscv64
+	cargo update --package libc --precise 0.2.139
 }
 
 post_install() {

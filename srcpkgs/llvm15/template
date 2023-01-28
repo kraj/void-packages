@@ -76,6 +76,11 @@ if [ "$_libomp_enable" = "yes" ]; then
 	subpackages+=" libomp libomp-devel"
 	# because of cmake nonsense referencing libomptarget.so.*
 	depends+=" libomp>=${version}_${revision}"
+	if [ "$CROSS_BUILD" ]; then
+		# Seems to require a full host llvm/clang build
+		configure_args+=" -DLIBOMPTARGET_BUILD_CUDA_PLUGIN=OFF"
+		configure_args+=" -DLIBOMPTARGET_BUILD_AMDGPU_PLUGIN=OFF"
+	fi
 fi
 
 subpackages+=" clang clang-analyzer libclang libclang-cpp

@@ -23,6 +23,10 @@ conf_files="/etc/php/php.ini"
 lib32disabled=yes
 replaces="php-mcrypt<7.2.0"
 
+case "$XBPS_TARGET_MACHINE" in
+	riscv64*) broken="ext/pcre/pcre2lib/pcre2_jit_compile.c:82:2: error: #error Unsupported architecture" ;;
+esac
+
 if [ -n "$CROSS_BUILD" ]; then
 	# php-pear needs php to build
 	hostmakedepends+=" php"

@@ -87,12 +87,3 @@ index 992e5d7..5e49df7 100644
  				EC_KEY_set_private_key(pkey, pkbn);
  
  				EC_POINT *origin = EC_POINT_new(pgroup);
-@@ -1395,7 +1403,7 @@ main(int argc, char **argv)
- 					addrtype = 60;
- 					privtype = 128;
- 					break;
--			}			
-+			}
- 			break;
- 
- /*END ALTCOIN GENERATOR*/

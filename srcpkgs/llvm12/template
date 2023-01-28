@@ -27,7 +27,7 @@ configure_args="
 hostmakedepends="perl python3 zlib-devel libffi-devel swig python3-Sphinx
  python3-recommonmark python3-sphinx-automodapi"
 makedepends="python3-devel zlib-devel elfutils-devel libffi-devel libedit-devel
- libxml2-devel binutils-devel libatomic-devel"
+ libxml2-devel binutils-devel"
 depends="libllvm12>=${version}_${revision}"
 short_desc="Low Level Virtual Machine"
 maintainer="Orphaned <orphan@voidlinux.org>"
@@ -108,10 +108,7 @@ pre_configure() {
 			CXXFLAGS="$BUILD_CXXFLAGS" LDFLAGS="$BUILD_LDFLAGS" \
 			cmake ../.. -DCMAKE_BUILD_TYPE=Release
 		make ${makejobs} -C utils/TableGen
-		make ${makejobs} -C tools/clang/utils/TableGen
-		[ "$_lldb_enable" = "yes" ] && make ${makejobs} -C tools/lldb/utils/TableGen
 		configure_args+=" -DLLVM_TABLEGEN=${wrksrc}/llvm/build/HOST/bin/llvm-tblgen"
-		configure_args+=" -DCLANG_TABLEGEN=${wrksrc}/llvm/build/HOST/bin/clang-tblgen"
 		cd ../..
 	fi
 
